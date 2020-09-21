@@ -6,8 +6,8 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Hello, My name is Bhavik Vashi");
+            Variable_Class.printData();
+
             Console.Read();
         }
     }
