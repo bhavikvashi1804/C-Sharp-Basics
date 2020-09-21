@@ -6,8 +6,7 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            Variable_Class.printData();
-            Console.Read();
+            Variable_Class.consoleMethods();
         }
     }
 }

@@ -29,7 +29,46 @@ namespace C_Sharp
             float f1 = 3.5f;
             float f2 = 4.5f;
             Console.WriteLine("The sum of " + f1 + " and " + f2 + " is " + (f1+f2));
-        }            
+        }
+
+        public static void dataTypeString()
+        {
+            string user_name = "Bhavik1804";
+            string first_name = "Bhavik", last_name = "Vashi";
+            Console.WriteLine("User Name is:"+user_name);
+            Console.WriteLine("My full name is " + first_name + " " +last_name);
+
+            //toUpper()
+            string full_name = first_name.ToUpper() + " " + last_name.ToUpper();
+            Console.WriteLine(full_name);
+            //toLower()
+            string full_name1 = first_name.ToLower() + " " + last_name.ToLower();
+            Console.WriteLine(full_name1);
+        }
+
+        public static void consoleMethods()
+        {
+            Console.Write("Hello");
+            Console.Write("I am Bhavik Vashi");
+
+            Console.WriteLine("");
+            // to move the pointer to new line
+            Console.WriteLine("Hello, I am Bhavik Vashi");
+            Console.WriteLine("Good Morning");
+            Console.WriteLine("");
+
+            Console.Write("Enter a String and press enter:");
+            string inputString = Console.ReadLine();
+            Console.WriteLine("You have entered {0}",inputString);
+
+            Console.Write("Enter a Key and press enter:");
+            int asciiValue = Console.Read();
+            Console.WriteLine("ASCII VALUE IS {0}",asciiValue);
+
+            Console.Write("Enter any key to exit");
+            Console.ReadKey();
+            //this is going to wait untill we enter any key
+        }
     }
 }
  
