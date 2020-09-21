@@ -6,7 +6,7 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            Variable_Class.consoleMethods();
+            VariableClass.ConsoleMethods();
         }
     }
 }

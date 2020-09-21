@@ -4,9 +4,9 @@ using System.Text;
 
 namespace C_Sharp
 {
-    class Variable_Class
+    class VariableClass
     {
-        public static void printData()
+        public static void NumberDataType()
         {
             int num1 = 13;
             int num2 = 7;
@@ -31,22 +31,22 @@ namespace C_Sharp
             Console.WriteLine("The sum of " + f1 + " and " + f2 + " is " + (f1+f2));
         }
 
-        public static void dataTypeString()
+        public static void DataTypeString()
         {
-            string user_name = "Bhavik1804";
-            string first_name = "Bhavik", last_name = "Vashi";
-            Console.WriteLine("User Name is:"+user_name);
-            Console.WriteLine("My full name is " + first_name + " " +last_name);
+            string userName = "Bhavik1804";
+            string firstName = "Bhavik", lastName = "Vashi";
+            Console.WriteLine("User Name is:"+userName);
+            Console.WriteLine("My full name is " + firstName + " " +lastName);
 
             //toUpper()
-            string full_name = first_name.ToUpper() + " " + last_name.ToUpper();
-            Console.WriteLine(full_name);
+            string fullName = firstName.ToUpper() + " " + lastName.ToUpper();
+            Console.WriteLine(fullName);
             //toLower()
-            string full_name1 = first_name.ToLower() + " " + last_name.ToLower();
-            Console.WriteLine(full_name1);
+            string fullName1 = firstName.ToLower() + " " + lastName.ToLower();
+            Console.WriteLine(fullName1);
         }
 
-        public static void consoleMethods()
+        public static void ConsoleMethods()
         {
             Console.Write("Hello");
             Console.Write("I am Bhavik Vashi");
