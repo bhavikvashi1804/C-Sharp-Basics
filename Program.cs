@@ -6,7 +6,11 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            VariableClass.ConstantConcept();
+           
+            MethodsClass.GreetPeople();
+            MethodsClass.GreeetPeopleWithName("Bhavik");
+            Console.WriteLine(MethodsClass.Add(10, 20));
+            Console.WriteLine(MethodsClass.GetCompanyName());
             Console.ReadKey();
         }
     }
