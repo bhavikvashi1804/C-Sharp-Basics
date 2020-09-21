@@ -66,7 +66,8 @@ namespace C_Sharp
 
         public static double Divide(int num1,int num2)
         {
-            return (num1 / num2);
+            double d1= (double)num1, d2 =(double) num2;
+            return (d1 / d2);
         }
     }
 }
