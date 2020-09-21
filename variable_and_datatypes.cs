@@ -24,6 +24,11 @@ namespace C_Sharp
             //you can not store the divided into int 
             //int x = d1 / num1;
             // for this you need type conversion 
+
+
+            float f1 = 3.5f;
+            float f2 = 4.5f;
+            Console.WriteLine("The sum of " + f1 + " and " + f2 + " is " + (f1+f2));
         }            
     }
 }
