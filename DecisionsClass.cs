@@ -55,5 +55,27 @@ namespace C_Sharp
 
             
         }
+
+
+        public static void ExplainSwitch()
+        {
+            int age = 12;
+
+            switch (age)
+            {
+                case 15:
+                    Console.WriteLine("Too young to party in club");
+                    break;
+                case 18:
+                    Console.WriteLine("Focus on your JEE");
+                    break;
+                case 22:
+                    Console.WriteLine("Focus on your job");
+                    break;
+                default:
+                    Console.WriteLine("Do what ever you want");
+                    break;
+            }
+        }
     }
 }
