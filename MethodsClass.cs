@@ -33,5 +33,28 @@ namespace C_Sharp
         {
             return "GCET";
         }
+
+
+        //TryParse method
+        public static void ExplainTryParse()
+        {
+            string numberAsString = "123456";
+            int numberAsInt;
+            bool success = int.TryParse(numberAsString,out numberAsInt);
+            if (success)
+            {
+                Console.WriteLine("Parsing done");
+            }
+            else
+            {
+                Console.WriteLine("Parsing fail");
+            }
+            // string s1 = "1234"; success = True
+            // string s2 = "1234x"; success = False;
+            // you can also use TryParse method with int,float,double
+            // int.TryParse()
+            //double.TryParse()
+            //float.TryParse()
+        }
     }
 }
