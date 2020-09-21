@@ -7,8 +7,6 @@ namespace C_Sharp
         static void Main(string[] args)
         {
             Variable_Class.printData();
-            Variable_Class.printData1();
-
             Console.Read();
         }
     }
