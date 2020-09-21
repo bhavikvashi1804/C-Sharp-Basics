@@ -77,5 +77,15 @@ namespace C_Sharp
                     break;
             }
         }
+
+
+        public static void ExplainTernaryOperator()
+        {
+            Console.Write("Enter temperature:");
+            int temperature = int.Parse(Console.ReadLine());
+
+            string stateOfMatter = temperature > 100 ? "Gas" : temperature < 0 ? "Solid" : "Matter";
+            Console.WriteLine(stateOfMatter);
+        }
     }
 }

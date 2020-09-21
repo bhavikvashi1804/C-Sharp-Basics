@@ -66,7 +66,7 @@ namespace C_Sharp
             Console.WriteLine("True || False: "+ (true || false));
 
 
-            //Conditional Operator
+            //Ternary Operator
             //int x = condition ? valueIfConditionIsTrue: valueIfConditionIsTrue ;
             int x = (5 > 2) ? 1 : 0;
             int y = (5 < 2) ? 1: 0;
