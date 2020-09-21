@@ -10,20 +10,32 @@ namespace C_Sharp
         public static void DoCalculations()
         {
 
-            int ch;
-            
+            int ch=8;
+            int num1=0, num2=0;
+            double result = 0;
+
             Console.WriteLine("1:Addition\n2:Subtraction\n3:Multipy\n4:Divide");
             Console.Write("Enter Your Choice:");
 
-            ch = Int32.Parse(Console.ReadLine());
-
-            int num1, num2;
-            double result= 0;
-
-            Console.Write("Enter Number 1:");
-            num1 = Int32.Parse(Console.ReadLine());
-            Console.Write("Enter Number 2:");
-            num2 = Int32.Parse(Console.ReadLine());
+            try
+            {
+                ch = Int32.Parse(Console.ReadLine());
+                Console.Write("Enter Number 1:");
+                num1 = Int32.Parse(Console.ReadLine());
+                Console.Write("Enter Number 2:");
+                num2 = Int32.Parse(Console.ReadLine());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Finally always executed, even there is exception or not");
+                // this is normally used to do clean up process
+                //close a file 
+            }
+            
 
 
             if (ch == 1)

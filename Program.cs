@@ -6,7 +6,7 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            Calculator.DoCalculations();
+            ExceptionClass.Divide(20,0);
             Console.ReadKey();
         }
     }
