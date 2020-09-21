@@ -46,6 +46,62 @@ namespace C_Sharp
             Console.WriteLine(fullName1);
         }
 
+        public static void StringMethods()
+        {
+            string name = "Bhavik";
+            // ToLower()
+            Console.Write(" ToLower() ");
+            Console.WriteLine(name.ToLower());
+            // ToUpper()
+            Console.Write(" ToUpper() ");
+            Console.WriteLine(name.ToUpper());
+
+            // Concat()
+            Console.WriteLine("");
+            Console.WriteLine(" Concat() ");
+            string firstName = "Bhavik";
+            string lastName = "Vashi";
+            string fullName = string.Concat(firstName, " ", lastName);
+            Console.WriteLine(fullName);
+
+            // SubString()
+            Console.WriteLine("");
+            Console.WriteLine(" SubString() ");
+            Console.WriteLine(fullName.Substring(2));
+            Console.WriteLine(fullName.Substring(2, 4));
+
+            //Trim()
+            Console.WriteLine("");
+            Console.WriteLine(" Trim() ");
+            string myString1 = " Hello, My name is Bhavik ";
+            Console.WriteLine(myString1);
+            Console.WriteLine(myString1.Trim());
+
+            // IndexOf()
+            Console.WriteLine("");
+            Console.WriteLine(" IndexOf() ");
+            string myString2 = "Good morning";
+            string myString3 = "My name is Bhavik. This is an Apple";
+            Console.WriteLine(myString2.IndexOf('d')); //3
+            Console.WriteLine(myString3.IndexOf("is")); //8
+
+            // Format
+            Console.WriteLine("");
+            Console.WriteLine(" Format() ");
+            string message = string.Format("Hello, my first name is {0} and my last name is {1}",firstName,lastName);
+            Console.WriteLine(message);
+
+
+            // IsNullOrWhiteSpace()
+            Console.WriteLine("");
+            Console.WriteLine(" IsNullOrWhiteSpace() ");
+            string myString5 = "   ";
+            string myString6 = "Hello";
+            Console.WriteLine(myString5 + ":IsNullOrWhiteSpace():" + string.IsNullOrWhiteSpace(myString5));
+            Console.WriteLine(myString6 + ":IsNullOrWhiteSpace():" + string.IsNullOrWhiteSpace(myString6));
+        }
+
+
         public static void ConsoleMethods()
         {
             Console.Write("Hello");
