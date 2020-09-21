@@ -103,6 +103,29 @@ namespace C_Sharp
             Console.WriteLine(ageAsString);
             Console.WriteLine(childAsString);
         }
+
+        public static void ParseNumberFromString()
+        {
+            string myAge = "22";
+            int age = Int32.Parse(myAge);
+            Console.WriteLine(age + ", Data type :" + age.GetType().FullName);
+
+            //here it do the string addition
+            string fatherAge = "44";
+            string result = myAge + fatherAge;
+            Console.WriteLine(result);
+            //prints 2244
+
+            //now lets actual use of parseInt
+            int result1 = Int32.Parse(myAge) + Int32.Parse(fatherAge);
+            Console.WriteLine(result1);
+            //prints 66
+
+           //get the double number from string
+            string salary = "32000.57";
+            double salary1 = Double.Parse(salary);
+            Console.WriteLine(salary1.GetType().FullName);
+        }
     }
 }
  
