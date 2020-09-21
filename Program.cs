@@ -6,7 +6,7 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            MethodsClass.ExplainTryParse();
+            DecisionsClass.ExplainIfElse();
             Console.ReadKey();
         }
     }
