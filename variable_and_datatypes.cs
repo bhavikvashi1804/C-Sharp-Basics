@@ -61,13 +61,19 @@ namespace C_Sharp
             string inputString = Console.ReadLine();
             Console.WriteLine("You have entered {0}",inputString);
 
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.BackgroundColor = ConsoleColor.DarkGray;
+            Console.Clear();
+            //clears the console buffer , bgcolor, color 
+            //if we comment Console.Clear() then only text and its box area is colored 
+
             Console.Write("Enter a Key and press enter:");
             int asciiValue = Console.Read();
             Console.WriteLine("ASCII VALUE IS {0}",asciiValue);
 
             Console.Write("Enter any key to exit");
             Console.ReadKey();
-            //this is going to wait untill we enter any key
+            //this is going to wait until we enter any key
         }
     }
 }
