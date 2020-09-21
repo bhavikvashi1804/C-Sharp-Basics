@@ -6,7 +6,7 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            ExceptionClass.Divide(20,0);
+            ExceptionClass.DemoUserDefinedException();
             Console.ReadKey();
         }
     }
