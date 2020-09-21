@@ -12,7 +12,14 @@ namespace C_Sharp
             int result = 0;
             try
             {
-                result = d1 / d2;
+                if(d2 == 0)
+                {
+                    throw new DivideByZeroException("Second Number Must not be 0");
+                }
+                else
+                {
+                    result = d1 / d2;
+                }
             }
             catch(DivideByZeroException e)
             {
@@ -25,7 +32,7 @@ namespace C_Sharp
         }
 
 
-        public static void DemoUserDefinedException()
+        public static void DemoUserDefinedException() 
         {
             Temperature temp = new Temperature();
             try
