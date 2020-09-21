@@ -75,6 +75,34 @@ namespace C_Sharp
             Console.ReadKey();
             //this is going to wait until we enter any key
         }
+
+        public static void DoTypeConversion()
+        {
+            //Explicit Conversion
+            double d1 = 15.678;
+            int num1;
+            //cast double to int
+            num1 = (int)d1;
+            Console.WriteLine(num1);
+
+            //Implicit Conversion
+            int num2 = 1234567;
+            long longNum = num2;
+            Console.WriteLine(longNum);
+
+            float floatNum1 = 5.5f;
+            double doubleNum1 = floatNum1;
+            Console.WriteLine(doubleNum1);
+
+            //type Conversion using inbuilt methods
+            //any data type to String 
+            int age = 33;
+            bool child = false;
+            string ageAsString = age.ToString();
+            string childAsString = child.ToString();
+            Console.WriteLine(ageAsString);
+            Console.WriteLine(childAsString);
+        }
     }
 }
  

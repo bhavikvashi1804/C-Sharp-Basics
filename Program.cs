@@ -6,7 +6,8 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            VariableClass.ConsoleMethods();
+            VariableClass.DoTypeConversion();
+            Console.ReadKey();
         }
     }
 }
