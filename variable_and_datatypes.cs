@@ -182,6 +182,17 @@ namespace C_Sharp
             double salary1 = Double.Parse(salary);
             Console.WriteLine(salary1.GetType().FullName);
         }
+
+
+        // constant as field
+        const double PI = 3.14;
+        public static void ConstantConcept()
+        {
+            Console.WriteLine(PI);
+            //pi = 5.5;
+            // you can not change its value 
+            // you can use it but can not change its value
+        }
     }
 }
  

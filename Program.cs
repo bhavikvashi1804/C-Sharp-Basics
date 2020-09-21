@@ -6,7 +6,7 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            VariableClass.StringMethods();
+            VariableClass.ConstantConcept();
             Console.ReadKey();
         }
     }
