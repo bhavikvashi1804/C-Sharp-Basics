@@ -11,53 +11,75 @@ namespace C_Sharp
 
         public Box(int length,int width,int height)
         {
-            this.length = length;
-            this.width = width;
-            this.height = height;
+            Length = length;
+            Width = width;
+            Height = height;
+            //it is also okay to use this.length = length at here
         }
 
         //setter and getter
-        public void SetLength(int length)
+        public int Length
         {
-            if( length < 0)
+            set
             {
-                throw new Exception("Length must be greater than 0");
+                if(value < 0)
+                {
+                    throw new Exception("Length must be greater than 0");  
+                }
+                this.length = value;
             }
-            this.length = length;
-        }
-        public int GetLength()
-        {
-            return length;
-        }
-        public void SetWidth(int width)
-        {
-            if(width < 0)
+            get
             {
-                throw new Exception("width must be greater than 0");
+                return length;
             }
-            this.width = width;
         }
-        public int GetWidth()
+
+        public int Width
         {
-            return width;
-        }
-        public void SetHeight(int height)
-        {
-            if (height < 0)
+            set
             {
-                throw new Exception("Height must be greater than 0");
+                if (value < 0)
+                {
+                    throw new Exception("Width must be greater than 0");
+                }
+                this.width = value;
             }
-            this.height = height;
+            get
+            {
+                return width;
+            }
         }
-        public int GetHeight()
+
+        public int Height
         {
-            return height;
+            set
+            {
+                if (value < 0)
+                {
+                    throw new Exception("Height must be greater than 0");
+                }
+                this.height = value;
+            }
+            get
+            {
+                return height;
+            }
         }
-        public int GetVolume()
+
+
+        public int Volume
         {
-            calculateVolume();
-            return volume;
+            get
+            {
+                calculateVolume();
+                return volume;
+            }
         }
+
+        public string BoxName { get; set; }
+
+
+
 
 
         //methods
