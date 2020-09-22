@@ -6,17 +6,12 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            //create a object of Human Class
-            Human h1 = new Human();
-            //access the public variable
-            h1.fullName = "Bhavik Vashi";
-            //call the class method
-            h1.IntroduceMySelf();
+            Human bhavik = new Human("Bhavik", "Vashi", "Blue", 23);
+            bhavik.IntroduceMySelf();
 
-            Human h2 = new Human();
-            h2.fullName = "Raj Patel";
-            h2.IntroduceMySelf();
-
+            Human raj = new Human("Raj", "Patel", "Gray", 21);
+            raj.IntroduceMySelf();
+           
             Console.ReadKey();
         }
     }
