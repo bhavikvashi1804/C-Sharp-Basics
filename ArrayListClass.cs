@@ -71,6 +71,20 @@ namespace C_Sharp
                 Console.Write("{0} ", marks[i]);
             }
             Console.WriteLine();
+
+            Console.WriteLine("Sort the List and then print");
+            marks.Sort();
+            for (int i = 0; i < marks.Count; i++)
+            {
+                Console.Write("{0} ", marks[i]);
+            }
+            Console.WriteLine();
+
+            Console.WriteLine("Check that whether 82 is present in list or not {0}:", marks.Contains(82));
+            int index = marks.FindIndex(x=>x==82);
+            Console.WriteLine("Index of 82 is {0}", index);
+
+            marks.ForEach(x => Console.Write("{0} ",x));
         }
     }
 }
