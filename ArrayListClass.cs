@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Text;
 
 namespace C_Sharp
@@ -43,6 +44,16 @@ namespace C_Sharp
             }
             Console.WriteLine();
             Console.WriteLine("Array List Length is: {0}", arrayList.Count);
+
+
+            Console.WriteLine("Adding Object to ArrayList");
+            arrayList.Add(new Number { N = 5 });
+            foreach (object item in arrayList)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
+
         }
 
         public static void ExplainList()
@@ -85,6 +96,16 @@ namespace C_Sharp
             Console.WriteLine("Index of 82 is {0}", index);
 
             marks.ForEach(x => Console.Write("{0} ",x));
+        }
+    }
+
+    class Number
+    {
+        public int N { get; set; }
+
+        public override String ToString()
+        {
+            return N.ToString();
         }
     }
 }
