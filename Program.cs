@@ -9,8 +9,11 @@ namespace C_Sharp
             Human bhavik = new Human("Bhavik", "Vashi", "Blue", 23);
             bhavik.IntroduceMySelf();
 
-            Human raj = new Human("Raj", "Patel", "Gray", 21);
+            Human raj = new Human("Raj", "Patel");
             raj.IntroduceMySelf();
+
+            Human bhavik1 = new Human(bhavik);
+            bhavik1.IntroduceMySelf();
            
             Console.ReadKey();
         }

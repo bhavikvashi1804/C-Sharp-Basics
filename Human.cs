@@ -12,7 +12,27 @@ namespace C_Sharp
         private string firstName, lastName,eyeColor;
         private int age;
 
-        //constructor
+        //default constructor
+        public Human()
+        {
+            Console.WriteLine("Default Constructor is called");
+        }
+
+        //copy constructor
+        public Human(Human h1)
+        {
+            this.firstName = h1.firstName;
+            this.lastName = h1.lastName;
+            this.eyeColor = h1.eyeColor;
+            this.age = h1.age;
+        }
+
+        //parameterized constructor
+        public Human(string firstName, string lastName)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
         public Human(string firstName,string lastName,string eyeColor,int age)
         {
             this.firstName = firstName;
@@ -24,15 +44,23 @@ namespace C_Sharp
         //methods
         public void IntroduceMySelf()
         {
-            if (age == 1)
+            if(age != 0)
             {
-                Console.WriteLine("Hi, I am {0} {1} and {2} year old. My eye color is {3}.", firstName, lastName, age, eyeColor);
+                if (age == 1)
+                {
+                    Console.WriteLine("Hi, I am {0} {1} and {2} year old. My eye color is {3}.", firstName, lastName, age, eyeColor);
+                }
+                else
+                {
+                    Console.WriteLine("Hi, I am {0} {1} and {2} years old. My eye color is {3}.", firstName, lastName, age, eyeColor);
+
+                }
             }
             else
             {
-                Console.WriteLine("Hi, I am {0} {1} and {2} years old. My eye color is {3}.", firstName, lastName, age, eyeColor);
-
+                Console.WriteLine("Hi, I am {0} {1}", firstName, lastName);
             }
+           
         }
 
     }
