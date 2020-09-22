@@ -66,5 +66,33 @@ namespace C_Sharp
             } 
 
         }
+
+        public static void ExplainBreakAndContinue()
+        {
+            for(int i = 1; i <= 10; i++)
+            {
+                if (i == 3)
+                {
+                    Console.WriteLine("Counter at {0} and we want to skip it", i);
+                    continue;
+                }
+                if (i == 5)
+                {
+                    Console.WriteLine("Counter at {0} and we want to stop at here", i);
+                    break;
+                }
+                Console.WriteLine(i);
+            }
+
+            Console.WriteLine("Print the Even number using countinue");
+            for(int i = 1; i < 11; i++)
+            {
+                if(i%2 != 0)
+                {
+                    continue;
+                }
+                Console.WriteLine(i);
+            }
+        }
     }
 }
