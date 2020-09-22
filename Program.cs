@@ -7,7 +7,7 @@ namespace C_Sharp
         static void Main(string[] args)
         {
 
-            ArrayListClass.ExplainArrayList();
+            ArrayListClass.ExplainList();
             Console.Read();
 
         }

@@ -44,5 +44,33 @@ namespace C_Sharp
             Console.WriteLine();
             Console.WriteLine("Array List Length is: {0}", arrayList.Count);
         }
+
+        public static void ExplainList()
+        {
+            List<int> marks = new List<int>();
+            marks.Add(78);
+            marks.Add(82);
+            marks.Add(99);
+            marks.Add(77);
+            marks.Add(78);
+
+            foreach(int x in marks)
+            {
+                Console.Write("{0} ", x);
+            }
+            Console.WriteLine();
+            marks.Remove(78);
+            for(int i = 0; i < marks.Count; i++)
+            {
+                Console.Write("{0} ", marks[i]);
+            }
+            Console.WriteLine();
+            marks.RemoveAt(2);
+            for (int i = 0; i < marks.Count; i++)
+            {
+                Console.Write("{0} ", marks[i]);
+            }
+            Console.WriteLine();
+        }
     }
 }
