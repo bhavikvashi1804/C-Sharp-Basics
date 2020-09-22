@@ -107,5 +107,46 @@ namespace C_Sharp
             Console.WriteLine("Dimension of 3d array is {0}", array3d.Rank);
 
         }
+
+
+        public static void ExplainJaggedArray()
+        {
+            //jagged array means multiple array with in one array
+            //declare jagged array
+            int[][] jaggedArray = new int[3][];
+            //here 3 specify that we have 3 arrays in that perticular array
+
+            //create array for that each sub array
+            jaggedArray[0] = new int[5];
+            jaggedArray[1] = new int[3];
+            jaggedArray[2] = new int[2];
+
+            //assign value to that sub array
+            jaggedArray[0] = new int[] { 1,2,3,4,5};
+            jaggedArray[1] = new int[] { 6,7,8};
+            jaggedArray[2] = new int[] { 9, 10 };
+
+            //other way to assign value to jaggedArray
+            int[][] jaggedArray2 = new int[][]
+            {
+                 new int[] { 1,2,3,4,5},
+                 new int[] { 6,7,8},
+                 new int[] { 9, 10 }
+            };
+
+            Console.WriteLine("Value at center is {0}", jaggedArray2[1][1]);
+
+            Console.WriteLine("Print the Jagged array");
+
+            for(int i=0;i< jaggedArray2.Length; i++)
+            {
+                for(int j = 0; j < jaggedArray2[i].Length; j++)
+                {
+                    Console.Write("{0} ", jaggedArray2[i][j]);
+                }
+                Console.WriteLine();
+            }
+
+        }
     }
 }

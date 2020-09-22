@@ -7,7 +7,7 @@ namespace C_Sharp
         static void Main(string[] args)
         {
 
-            TicTacToe.PlayTicTacToe();
+            ArraysClass.ExplainJaggedArray();
             Console.Read();
 
         }
