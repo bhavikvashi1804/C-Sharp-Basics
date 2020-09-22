@@ -7,8 +7,9 @@ namespace C_Sharp
         static void Main(string[] args)
         {
 
-            ArraysClass.ArrayBasics();
+            ArraysClass.ExplainForEach();
             Console.Read();
+
         }
     }
 }

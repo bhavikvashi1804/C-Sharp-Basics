@@ -39,5 +39,37 @@ namespace C_Sharp
             //get the length of array
             Console.WriteLine("Length of marks array: {0}", marks.Length);
         }
+
+        public static void ExplainForEach()
+        {
+            int[] numbers = new int[10];
+
+            for(int i = 0; i < 10; i++)
+            {
+                numbers[i] = i+1;
+            }
+
+            Console.WriteLine("Array is");
+            for(int i = 0; i < numbers.Length; i++)
+            {
+                Console.WriteLine("Element at {0} is {1}", i, numbers[i]);
+            }
+
+            Console.WriteLine("Print the array using for each loop");
+            int counter = 0;
+            foreach(int num1 in numbers)
+            {
+                Console.WriteLine("Element at {0} is {1}", counter++, num1);
+            }
+
+            //for each task
+            string[] friends = {"Raj","Yash","Meet","Tejoy","Bhargav" };
+
+            foreach(string oneFriend in friends)
+            {
+                Console.WriteLine("Hello {0}", oneFriend);
+            }
+            
+        }
     }
 }
