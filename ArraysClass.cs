@@ -148,5 +148,25 @@ namespace C_Sharp
             }
 
         }
+
+
+        public static void ArrayAsParameter()
+        {
+            double avg= GetAverage(new int[] { 1,2,3,4,5,6});
+            Console.WriteLine(avg);
+        }
+
+        public static double GetAverage(int[] numbers)
+        {
+            int sum =0;
+            double avg = 0;
+            foreach(int number in numbers)
+            {
+                sum+= number;
+            }
+
+            avg = (double)sum / (double)numbers.Length;
+            return avg;
+        }
     }
 }
