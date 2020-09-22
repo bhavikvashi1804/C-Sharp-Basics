@@ -6,8 +6,9 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            Box b1 = new Box(4, 5, 10);
-            Console.WriteLine("Width of Box is {0}", b1.Width);
+
+            ArraysClass.ArrayBasics();
+            Console.Read();
         }
     }
 }
