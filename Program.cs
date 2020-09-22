@@ -6,7 +6,7 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            LoopClass.ExplainDoWhileLoop();
+            LoopClass.ExplainWhileLoop();
             Console.ReadKey();
         }
     }

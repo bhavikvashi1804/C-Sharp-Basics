@@ -54,5 +54,17 @@ namespace C_Sharp
             } while (counter < 5);
 
         }
+
+
+        public static void ExplainWhileLoop()
+        {
+            int counter = 0;
+            Console.WriteLine("While Loop Check the condition at first");
+            while(counter < 5)
+            {
+                Console.WriteLine(counter++);
+            } 
+
+        }
     }
 }
