@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 
 namespace C_Sharp
@@ -9,13 +10,6 @@ namespace C_Sharp
         //member variables
         private int length, width, height,volume;
 
-        public Box(int length,int width,int height)
-        {
-            Length = length;
-            Width = width;
-            Height = height;
-            //it is also okay to use this.length = length at here
-        }
 
         //setter and getter
         public int Length
@@ -79,9 +73,6 @@ namespace C_Sharp
         public string BoxName { get; set; }
 
 
-
-
-
         //methods
         public void DisplayInfo()
         {
@@ -92,6 +83,22 @@ namespace C_Sharp
         public void calculateVolume()
         {
             volume = length * width * height;
+        }
+
+        //constructor
+        public Box(int length, int width, int height)
+        {
+            Length = length;
+            Width = width;
+            Height = height;
+            //it is also okay to use this.length = length at here
+        }
+        //destructor
+        ~Box()
+        {
+            //clean up statements are used to be put in destructor
+            Debug.WriteLine("--------------Clean up--------------");
+            Console.WriteLine("De-construction of object");
         }
     }
 }
