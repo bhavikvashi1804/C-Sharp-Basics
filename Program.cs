@@ -7,7 +7,7 @@ namespace C_Sharp
         static void Main(string[] args)
         {
 
-            ArraysClass.MultiDimensionalArray();
+            TicTacToe.PlayTicTacToe();
             Console.Read();
 
         }
