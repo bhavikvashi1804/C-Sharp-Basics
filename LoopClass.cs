@@ -35,5 +35,24 @@ namespace C_Sharp
                 Console.WriteLine(i);
             }
         }
+
+        public static void ExplainDoWhileLoop()
+        {
+            int counter = 0;
+            do
+            {
+                Console.WriteLine(counter++);
+            } while (counter < 5);
+
+
+            Console.WriteLine("Do While loop checks the condition after code is run");
+            Console.WriteLine("It executes once even if condition if false");
+            counter = 15;
+            do
+            {
+                Console.WriteLine(counter++);
+            } while (counter < 5);
+
+        }
     }
 }
