@@ -71,5 +71,41 @@ namespace C_Sharp
             }
             
         }
+
+        public static void MultiDimensionalArray()
+        {
+            int[,] array = new int[,]
+            {
+                {1,2,3 },
+                {4,5,6 },
+                {7,8,9 }
+            };
+
+            Console.WriteLine("Center value is {0}", array[1,1]);
+
+            int[,,] array3d = new int[,,]
+            {
+                {
+                    {1,2,4},
+                    {4,5,4}
+                },
+                {
+                    {21,43,4},
+                    {34,546,4}
+                }
+            };
+            Console.WriteLine("Print the 43 {0}", array3d[1, 0, 1]);
+
+
+            //other way to create 2d array with defined rows and columns
+            string[,] string2DArray = new string[3, 2] { {"Bhavik","Vashi" },{"Raj","Patel" }, {"Yash","Patel" } };
+            //other way to create 2d array
+            string[,] string2DArray1 = { { "Bhavik", "Vashi" }, { "Raj", "Patel" }, { "Yash", "Patel" } };
+
+
+            //get the array dimension using .Rank
+            Console.WriteLine("Dimension of 3d array is {0}", array3d.Rank);
+
+        }
     }
 }
