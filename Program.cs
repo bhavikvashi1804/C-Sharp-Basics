@@ -6,14 +6,17 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            Human bhavik = new Human("Bhavik", "Vashi", "Blue", 23);
-            bhavik.IntroduceMySelf();
+            Box b1 = new Box(4, 5, 10);
+            b1.DisplayInfo();
 
-            Human raj = new Human("Raj", "Patel");
-            raj.IntroduceMySelf();
-
-            Human bhavik1 = new Human(bhavik);
-            bhavik1.IntroduceMySelf();
+            try
+            {
+                b1.SetHeight(-10);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e);
+            }
            
             Console.ReadKey();
         }
