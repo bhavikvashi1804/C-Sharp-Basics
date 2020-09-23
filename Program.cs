@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace C_Sharp
 {
@@ -6,10 +7,23 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            Notification notification1 = new Notification("Raj Patel","How are you?","20-07-2020");
-            Console.WriteLine(notification1.getDate()); 
-            notification1.showNotification();
-            Console.ReadKey();
+            DateTime dob;
+            Console.WriteLine("Enter your birthdate");
+            dob = Convert.ToDateTime(Console.ReadLine());
+
+            Console.WriteLine("Age {0}",GetAge(dob));
+
+
+            Console.ReadLine();
+        }
+
+        public static int GetAge(DateTime dob)
+        {
+            var today = DateTime.Today;
+            var age = today.Year - dob.Year;
+            if (dob.Date > today.AddYears(-age)) age--;
+
+            return age;
         }
     }
 }
