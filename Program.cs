@@ -7,8 +7,8 @@ namespace C_Sharp
         static void Main(string[] args)
         {
 
-            ImagePost imagePost1 = new ImagePost("Happy Birthday","Yash Patel",true,"https://www.a123/com");
-            Console.WriteLine(imagePost1.ToString());
+            VideoPost videoPost1 = new VideoPost("Happy Birthday","Meet Patel","https://sdsad.com",true,120);
+            Console.WriteLine(videoPost1);
             Console.ReadLine();
         }
     }
