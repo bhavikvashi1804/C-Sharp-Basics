@@ -6,18 +6,19 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
+            Employee michael = new Employee("Michael", "Miller", 40000);
 
-            VideoPost videoPost1 = new VideoPost("Happy Birthday","Meet Patel","https://sdsad.com",true,120);
-            Console.WriteLine(videoPost1);
+            michael.Work();
+            michael.Pause();
 
+            Boss chuckNorris = new Boss("Ferrari", "Norris", "Chuck", 999999999);
 
-            videoPost1.PlayVideo();
-            Console.WriteLine("Press any key to stop video");
-            Console.ReadLine();
-            videoPost1.StopVideo();
+            chuckNorris.Lead();
 
-
-            Console.ReadLine();
+            Trainee michelle = new Trainee(32, 8, "Gartner", "Michelle", 10000);
+            michelle.Learn();
+            michelle.Work();
+            Console.ReadKey();
         }
     }
 }
