@@ -7,9 +7,9 @@ namespace C_Sharp
         static void Main(string[] args)
         {
 
-            ArrayListClass.ExplainArrayList();
-            Console.Read();
-
+            Post post1 = new Post("Thanks for birthday wish",true,"Raj Patel");
+            Console.WriteLine(post1.ToString());
+            Console.ReadLine();
         }
     }
 }
