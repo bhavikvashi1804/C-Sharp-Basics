@@ -4,9 +4,9 @@ using System.Text;
 
 namespace C_Sharp
 {
+    enum Day { Mon, Tue, Wed, Thu, Fri, Sat, Sun };
     class EmumDemo
     {
-
         public static void ExplainEnum()
         {
             Day d1 = Day.Mon;
