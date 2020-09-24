@@ -13,6 +13,20 @@ namespace C_Sharp
         public int HP { get; set; }
         public string Color { get; set; }
 
+
+        //has a RelationShip
+        protected CarIDInfo carIDInfo= new CarIDInfo();
+
+        public void SetCarIDInfo(int id,string owner)
+        {
+            carIDInfo.ID = id;
+            carIDInfo.Owner = owner;
+        }
+        public void GetCarIDInfo()
+        {
+            Console.WriteLine("Car ID: {0}, Car Owner: {1}", carIDInfo.ID, carIDInfo.Owner);
+        }
+
         public Car()
         {
 
@@ -103,5 +117,13 @@ namespace C_Sharp
         */
 
         //You can also mark class as sealed so it can not be take part in inheritance
+    }
+
+    //HAS-A
+    public class CarIDInfo
+    {
+        public int ID { get; set; }
+        public string Owner { get; set; } = "No owner";
+
     }
 }

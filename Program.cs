@@ -10,6 +10,9 @@ namespace C_Sharp
 
             M3 m31 = new M3(110, "Blue", "M3");
             m31.RepairCar();
+
+            m31.SetCarIDInfo(101, "Raj Patel");
+            m31.GetCarIDInfo();
             
             Console.ReadLine();
            
