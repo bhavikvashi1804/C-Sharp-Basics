@@ -24,13 +24,13 @@ namespace C_Sharp
             Color = color;
         }
 
-        public void ShowDetails()
+        public virtual void ShowDetails()
         {
             Console.WriteLine("HP: {0}\nColor: {1}", HP, Color);
 
         }
 
-        public void RepairCar()
+        public virtual void RepairCar()
         {
             Console.WriteLine("Car was repaired");
         }
@@ -50,11 +50,11 @@ namespace C_Sharp
         {
             Model = model;
         }
-        public void ShowDetails()
+        public override void ShowDetails()
         {
             Console.WriteLine("Brand: {0} Model: {1} HP: {2} Color: {3}", brand, Model, HP, Color);
         }
-        public void RepairCar()
+        public override void RepairCar()
         {
             Console.WriteLine("{0} {1} was repaired",brand,Model);
         }
@@ -75,12 +75,12 @@ namespace C_Sharp
             Model = model;
         }
 
-        public void ShowDetails()
+        public override void ShowDetails()
         {
             Console.WriteLine("Brand: {0} Model: {1} HP: {2} Color: {3}", brand, Model, HP, Color);
         }
 
-        public void RepairCar()
+        public override void RepairCar()
         {
             Console.WriteLine("{0} {1} was repaired", brand, Model);
         }
