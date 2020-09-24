@@ -15,6 +15,9 @@ namespace C_Sharp
             BMW bmw2 = new BMW(120, "Yellow", "X1");
             bmw2.ShowDetails();
             bmw2.RepairCar();
+
+            Car bmw3 = (Car)bmw2;
+            bmw3.ShowDetails();
             
             Console.ReadLine();
            
