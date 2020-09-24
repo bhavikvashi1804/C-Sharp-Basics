@@ -8,16 +8,8 @@ namespace C_Sharp
         static void Main(string[] args)
         {
 
-            Car bmw1 = new BMW(110, "Blue", "M5");
-            bmw1.ShowDetails();
-            bmw1.RepairCar();
-
-            BMW bmw2 = new BMW(120, "Yellow", "X1");
-            bmw2.ShowDetails();
-            bmw2.RepairCar();
-
-            Car bmw3 = (Car)bmw2;
-            bmw3.ShowDetails();
+            M3 m31 = new M3(110, "Blue", "M3");
+            m31.RepairCar();
             
             Console.ReadLine();
            

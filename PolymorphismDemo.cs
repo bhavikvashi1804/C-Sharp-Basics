@@ -80,9 +80,28 @@ namespace C_Sharp
             Console.WriteLine("Brand: {0} Model: {1} HP: {2} Color: {3}", brand, Model, HP, Color);
         }
 
-        public override void RepairCar()
+        public sealed override void RepairCar()
         {
             Console.WriteLine("{0} {1} was repaired", brand, Model);
         }
+    }
+
+    public class M3: BMW
+    {
+        public M3(int hp,string color,string model) : base(hp, color, model)
+        {
+        }
+
+
+
+        //sealed method is not allowed to be override 
+        /*
+        public override void RepairCar()
+        {
+            base.RepairCar();
+        }
+        */
+
+        //You can also mark class as sealed so it can not be take part in inheritance
     }
 }
