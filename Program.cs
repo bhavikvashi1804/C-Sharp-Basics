@@ -8,15 +8,13 @@ namespace C_Sharp
         static void Main(string[] args)
         {
 
-            var  cars= new List<Car>
-            {
-                new Audi(100,"White","A5"),
-                new BMW(110,"Blue","M5")
-            };
-            cars[0].ShowDetails();
-            cars[0].RepairCar();
-            cars[1].ShowDetails();
-            cars[1].RepairCar();
+            Car bmw1 = new BMW(110, "Blue", "M5");
+            bmw1.ShowDetails();
+            bmw1.RepairCar();
+
+            BMW bmw2 = new BMW(120, "Yellow", "X1");
+            bmw2.ShowDetails();
+            bmw2.RepairCar();
             
             Console.ReadLine();
            

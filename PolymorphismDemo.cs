@@ -24,7 +24,7 @@ namespace C_Sharp
             Color = color;
         }
 
-        public virtual void ShowDetails()
+        public void ShowDetails()
         {
             Console.WriteLine("HP: {0}\nColor: {1}", HP, Color);
 
@@ -50,7 +50,7 @@ namespace C_Sharp
         {
             Model = model;
         }
-        public override void ShowDetails()
+        public new void ShowDetails()
         {
             Console.WriteLine("Brand: {0} Model: {1} HP: {2} Color: {3}", brand, Model, HP, Color);
         }
@@ -75,7 +75,7 @@ namespace C_Sharp
             Model = model;
         }
 
-        public override void ShowDetails()
+        public new void ShowDetails()
         {
             Console.WriteLine("Brand: {0} Model: {1} HP: {2} Color: {3}", brand, Model, HP, Color);
         }
