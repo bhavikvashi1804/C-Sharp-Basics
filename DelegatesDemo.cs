@@ -66,5 +66,20 @@ namespace C_Sharp
         {
             Console.WriteLine(getTextDelegate("Bhavik"));
         }
+
+        public static void ExplainLambdaExpressions()
+        {
+            //Expression Lambda
+            GetTextDelegate getTextDelegate = (string name) =>{ return "Hello " + name; };
+            //Statement Lambda
+            GetTextDelegate getTextDelegate1 = (string name) => {
+                string value = "Hello " + name + " Good morning";
+                return value; 
+            };
+            Console.WriteLine(getTextDelegate("Raj"));
+
+            PerformCalculation performCalculation = (a, b) => (a + b);
+            Console.WriteLine(performCalculation(10, 20));
+        }
     }
 }
