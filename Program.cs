@@ -8,7 +8,7 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            EmumDemo.ExplainEnum();
+            MathClass.ExplainMathClass();
             Console.Read();
         }
     }
