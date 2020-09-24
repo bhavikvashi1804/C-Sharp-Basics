@@ -8,7 +8,7 @@ namespace C_Sharp
         static void Main(string[] args)
         {
 
-            DelegatesDemo.ExplainDelegates();
+            DelegatesDemo.ExplainAnonymousMethod();
             Console.ReadLine();
         }
     }

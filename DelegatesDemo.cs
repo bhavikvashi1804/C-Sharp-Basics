@@ -45,5 +45,26 @@ namespace C_Sharp
             Console.WriteLine(performCalculation1(20, 10));
 
         }
+
+
+        public delegate string GetTextDelegate(string name);
+
+        public static void ExplainAnonymousMethod()
+        {
+            GetTextDelegate getTextDelegate = delegate (string name)
+            {
+                return "Hello " + name;
+            };
+
+            Console.WriteLine(getTextDelegate("Bhavik"));
+
+            Display(getTextDelegate);
+        }
+
+
+        public static void Display(GetTextDelegate getTextDelegate)
+        {
+            Console.WriteLine(getTextDelegate("Bhavik"));
+        }
     }
 }
