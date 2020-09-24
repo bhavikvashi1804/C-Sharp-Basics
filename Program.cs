@@ -8,7 +8,13 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            DateTimeDemo.CalAge();
+            Shape shape1 = new Cube(10);
+            shape1.GetInfo();
+            Console.WriteLine("Volume of Cube is {0}",shape1.Volume());
+
+            Shape shape2 = new Sphere(7);
+            shape2.GetInfo();
+            Console.WriteLine("Volume of Sphere is {0}", shape2.Volume());
             Console.Read();
         }
     }
