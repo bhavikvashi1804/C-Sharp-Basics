@@ -7,23 +7,19 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            DateTime dob;
-            Console.WriteLine("Enter your birthdate");
-            dob = Convert.ToDateTime(Console.ReadLine());
 
-            Console.WriteLine("Age {0}",GetAge(dob));
-
-
+            var  cars= new List<Car>
+            {
+                new Audi(100,"White","A5"),
+                new BMW(110,"Blue","M5")
+            };
+            cars[0].ShowDetails();
+            cars[0].RepairCar();
+            cars[1].ShowDetails();
+            cars[1].RepairCar();
+            
             Console.ReadLine();
-        }
-
-        public static int GetAge(DateTime dob)
-        {
-            var today = DateTime.Today;
-            var age = today.Year - dob.Year;
-            if (dob.Date > today.AddYears(-age)) age--;
-
-            return age;
+           
         }
     }
 }
