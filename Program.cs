@@ -8,7 +8,7 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            MathClass.ExplainMathClass();
+            RandomDemo.ExplainRandom();
             Console.Read();
         }
     }
