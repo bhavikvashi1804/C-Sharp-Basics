@@ -8,7 +8,7 @@ namespace C_Sharp
     {
         static void Main(string[] args)
         {
-            RegularExpressionsDemo.ExplainRegularExpressions();
+            DateTimeDemo.CalAge();
             Console.Read();
         }
     }
