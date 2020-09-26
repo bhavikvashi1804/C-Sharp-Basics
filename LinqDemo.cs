@@ -11,9 +11,9 @@ namespace C_Sharp
         public static void LinqDemo1()
         {
             UniversityManager universityManager = new UniversityManager();
-            
 
-            universityManager.FemaleStudents();
+
+            universityManager.AllStudentsFromGTU();
 
         }
 
@@ -112,6 +112,30 @@ namespace C_Sharp
             IEnumerable<Student> femaleStudents = from student in students where student.Gender == "Female" select student;
             Console.WriteLine("Female Students");
             foreach (Student s in femaleStudents)
+            {
+                s.Display();
+            }
+        }
+
+        public void SortStudentByAge()
+        {
+            IEnumerable<Student> students1 = from student in students orderby student.Age select student;
+            Console.WriteLine("Sort According to Age");
+            foreach (Student s in students1)
+            {
+                s.Display();
+            }
+        }
+
+        public void AllStudentsFromGTU()
+        {
+            IEnumerable<Student> gtuStudents = from student in students
+                                               join university in universities
+                                               on student.UniversityID equals university.UniversityID
+                                               where university.UniversityName == "GTU"
+                                               select student;
+            Console.WriteLine("GTU Students");
+            foreach (Student s in gtuStudents)
             {
                 s.Display();
             }
