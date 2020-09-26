@@ -11,7 +11,9 @@ namespace C_Sharp
         public static void LinqDemo1()
         {
             UniversityManager universityManager = new UniversityManager();
-            universityManager.MaleStudents();
+            
+
+            universityManager.FemaleStudents();
 
         }
 
@@ -100,6 +102,19 @@ namespace C_Sharp
             IEnumerable<Student> maleStudents = from student in students where student.Gender == "Male" select student;
             Console.WriteLine("Male Students");
             foreach(Student s in maleStudents)
+            {
+                Console.WriteLine("Student ID: {0}", s.StudentID);
+                Console.WriteLine("Student Name: {0}", s.StudentName);
+                Console.WriteLine("Student Age: {0}", s.Age);
+                Console.WriteLine("University ID: {0}", s.UniversityID);
+            }
+        }
+
+        public void FemaleStudents()
+        {
+            IEnumerable<Student> femaleStudents = from student in students where student.Gender == "Female" select student;
+            Console.WriteLine("Female Students");
+            foreach (Student s in femaleStudents)
             {
                 Console.WriteLine("Student ID: {0}", s.StudentID);
                 Console.WriteLine("Student Name: {0}", s.StudentName);
