@@ -103,10 +103,7 @@ namespace C_Sharp
             Console.WriteLine("Male Students");
             foreach(Student s in maleStudents)
             {
-                Console.WriteLine("Student ID: {0}", s.StudentID);
-                Console.WriteLine("Student Name: {0}", s.StudentName);
-                Console.WriteLine("Student Age: {0}", s.Age);
-                Console.WriteLine("University ID: {0}", s.UniversityID);
+                s.Display();
             }
         }
 
@@ -116,10 +113,7 @@ namespace C_Sharp
             Console.WriteLine("Female Students");
             foreach (Student s in femaleStudents)
             {
-                Console.WriteLine("Student ID: {0}", s.StudentID);
-                Console.WriteLine("Student Name: {0}", s.StudentName);
-                Console.WriteLine("Student Age: {0}", s.Age);
-                Console.WriteLine("University ID: {0}", s.UniversityID);
+                s.Display();
             }
         }
     }
