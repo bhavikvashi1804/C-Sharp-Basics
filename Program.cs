@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace C_Sharp
 {
     class Program
     {
+
+
         static void Main(string[] args)
         {
-
-            DelegatesDemo.ExplainLambdaExpressions();
+            LinqDemo.LinqDemo1();
             Console.ReadLine();
         }
     }
+     
 }
