@@ -13,7 +13,7 @@ namespace C_Sharp
             UniversityManager universityManager = new UniversityManager();
 
 
-            universityManager.AllStudentsFromGTU();
+            universityManager.GetTheStudentByUniversityName("DDU");
 
         }
 
@@ -135,6 +135,21 @@ namespace C_Sharp
                                                where university.UniversityName == "GTU"
                                                select student;
             Console.WriteLine("GTU Students");
+            foreach (Student s in gtuStudents)
+            {
+                s.Display();
+            }
+        }
+
+
+        public void GetTheStudentByUniversityName(string universityName)
+        {
+            IEnumerable<Student> gtuStudents = from student in students
+                                               join university in universities
+                                               on student.UniversityID equals university.UniversityID
+                                               where university.UniversityName == universityName
+                                               select student;
+            Console.WriteLine("{0} Students",universityName);
             foreach (Student s in gtuStudents)
             {
                 s.Display();
