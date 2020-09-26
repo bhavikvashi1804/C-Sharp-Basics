@@ -88,6 +88,18 @@ namespace C_Sharp
             {
                 Console.WriteLine("Student {0} with age {1} from University {2} is in his/her {3} Semester", student.Name, student.Age, student.University, student.Semester);
             }
+
+
+            Console.WriteLine("Sort the students by age");
+
+            var sortedStudents = from student in students
+                                 orderby student.Age
+                                 select student;
+            foreach (var student in sortedStudents)
+            {
+                Console.WriteLine("Student {0} with age {1} from University {2} is in his/her {3} Semester", student.Name, student.Age, student.University, student.Semester);
+            }
+
         }
 
 
